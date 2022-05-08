@@ -24,7 +24,7 @@ async function run() {
         const item = await cursor.toArray();
         res.send(item);
         });
-        app.get('/items/:id', async(peq, res) =>{
+        app.get('/items/:id', async(req, res) =>{
            const id = req.params.id; 
            const query={_id: ObjectId(id)};
            const item = await itemCollection.findOne(query);
