@@ -39,9 +39,9 @@ async function run() {
 run().catch(console.dir);
 
 app.get('/', (req, res) =>{
-    res.send('Reaning warehouse Server again')
+    res.send('Reaning warehouse Server Site again')
 });
 app.listen(port, () =>{
-    console.log('Listening to port', port);
+    console.log('Listening to The port', port);
 })
 module.exports = app;
